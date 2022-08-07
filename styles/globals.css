@@ -4,5 +4,22 @@
 
 :root {
   --font-family: 'Anton', 'Noto Sans JP', sans-serif;
-  font-family: var(--font-family);
+  --base-color: #fff;
+  --base-text-color: #00020a;
 }
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --base-color: #00020a;
+    --base-text-color: #fff;
+  }
+}
+
+body {
+  background-color: var(--base-color);
+  color: var(--base-text-color);
+  font-family: var(--font-family);
+  font-feature-settings: "palt";
+}
+
+
