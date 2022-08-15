@@ -1,5 +1,5 @@
+import { vars } from "../../styles/theme.css.js";
 import {
-  themeClass,
   baseStyle,
   layerStyle,
   counterWrapperStyle,
@@ -10,7 +10,7 @@ import {
 import { motion, useAnimationControls } from "framer-motion";
 import { useEffect } from "react";
 
-export default function Loading({ isLoading }) {
+export default function Loading({ isLoading, changeState }) {
   const counterControl = useAnimationControls();
   const layerControl = useAnimationControls();
   const openingAnimation = useAnimationControls();
@@ -18,8 +18,8 @@ export default function Loading({ isLoading }) {
 
   const openingAnimationSequence = async () => {
     await openingAnimation.start({
-      backgroundColor: "var(--base-color)",
-      color: "var(--base-text-color)",
+      backgroundColor: vars.color.base,
+      color: vars.color.main,
       transition: {
         duration: 0.32,
         delay: 0.44,
@@ -60,6 +60,9 @@ export default function Loading({ isLoading }) {
       })
       .then(() => {
         return openingAnimationSequence();
+      })
+      .then(() => {
+        changeState(true);
       });
   }, []);
 
@@ -73,10 +76,7 @@ export default function Loading({ isLoading }) {
         }}
         animate={layerControl}
       ></motion.div>
-      <motion.div
-        className={`${themeClass} ${loadingStyle}`}
-        animate={openingAnimation}
-      >
+      <motion.div className={`${loadingStyle}`} animate={openingAnimation}>
         <div className={`${counterWrapperStyle}`} data-text="10COUNT">
           <div className={`${counterFrameStyle}`}>
             <motion.div className={`${counterStyle}`} animate={counterControl}>

@@ -4,7 +4,7 @@ const [themeClass, vars] = createTheme({});
 
 const footerStyle = style({
   textAlign: "center",
-  padding: "5rem",
+  padding: "3rem",
 });
 
 export { themeClass, footerStyle };

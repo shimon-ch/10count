@@ -1,11 +1,5 @@
-import { createTheme, keyframes, style } from "@vanilla-extract/css";
-
-const [themeClass, vars] = createTheme({
-  font: {
-    family: "Anton",
-    color: "#000",
-  },
-});
+import { vars } from "../../styles/theme.css.js";
+import { keyframes, style } from "@vanilla-extract/css";
 
 const baseStyle = style({
   position: "fixed",
@@ -17,16 +11,15 @@ const baseStyle = style({
 });
 
 const loadingStyle = style({
-  backgroundColor: "#fff",
-  color: vars.font.color,
-  fontFamily: vars.font.family,
+  backgroundColor: vars.color.main,
+  color: vars.color.base,
+  fontFamily: vars.font.en,
   fontSize: "5.6rem",
   position: "absolute",
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
   top: 0,
-  left: 0,
   width: "100%",
   height: "100%",
   transition: "opacity .3s ease-out",
@@ -165,7 +158,7 @@ const noiseAnimation2 = keyframes({
 });
 
 const layerStyle = style({
-  backgroundColor: "#fff",
+  backgroundColor: vars.color.main,
   width: "100%",
   height: "100%",
   position: "absolute",
@@ -184,8 +177,8 @@ const counterWrapperStyle = style({
     left: "2px",
     textShadow: "-1px 0 red",
     top: "0",
-    color: "white",
-    background: "black",
+    color: vars.color.main,
+    background: vars.color.base,
     overflow: "hidden",
     clip: "rect(0, 900px, 0, 0)",
     animation: `${noiseAnimation} .6s forwards linear alternate-reverse 4s`,
@@ -196,8 +189,8 @@ const counterWrapperStyle = style({
     left: "-2px",
     textShadow: "1px 0 blue",
     top: "0",
-    color: "white",
-    background: "black",
+    color: vars.color.main,
+    background: vars.color.base,
     overflow: "hidden",
     clip: "rect(0, 900px, 0, 0)",
     animation: `${noiseAnimation2} 1.6s forwards linear alternate-reverse 4s`,
@@ -215,7 +208,6 @@ const counterStyle = style({
 });
 
 export {
-  themeClass,
   baseStyle,
   loadingStyle,
   layerStyle,
