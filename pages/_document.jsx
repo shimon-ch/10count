@@ -11,7 +11,7 @@ class MyDocument extends Document {
             content="10COUNTは30代限界男性3人組によるゲーム実況グループです。"
           />
           <meta name="theme-color" content="#1f1f1f" />
-          <meta property="og:title" content="10COUNT OFFICIAL SIT" />
+          <meta property="og:title" content="10COUNT OFFICIAL SITE" />
           <meta property="og:type" content="website" />
           <meta property="og:image" content="https://10count.site/ogp.png" />
           <meta property="og:url" content="https://10count.site/" />
