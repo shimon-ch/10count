@@ -1,4 +1,8 @@
-import { sectionTitleStyle, leadStyle, layerStyle } from "./index.css.js";
+import {
+  sectionTitleStyle,
+  leadStyle,
+  layerStyle,
+} from "../styles/pages/index.css.js";
 import Loading from "../components/loading/loading.jsx";
 import Header from "../components/header/header.jsx";
 import Footer from "../components/footer/footer.jsx";
