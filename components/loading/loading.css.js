@@ -14,7 +14,7 @@ const loadingStyle = style({
   backgroundColor: vars.color.main,
   color: vars.color.base,
   fontFamily: vars.font.en,
-  fontSize: "5.6rem",
+  fontSize: "3.2rem",
   position: "absolute",
   display: "flex",
   justifyContent: "center",
@@ -23,6 +23,11 @@ const loadingStyle = style({
   width: "100%",
   height: "100%",
   transition: "opacity .3s ease-out",
+  "@media": {
+    "screen and (min-width: 768px)": {
+      fontSize: "5.6rem",
+    },
+  },
 });
 
 const noiseAnimation = keyframes({
