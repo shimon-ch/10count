@@ -13,7 +13,7 @@ class MyDocument extends Document {
           <meta name="theme-color" content="#1f1f1f" />
           <meta property="og:title" content="10COUNT OFFICIAL SIT" />
           <meta property="og:type" content="website" />
-          <meta property="og:image" content="/ogp.png" />
+          <meta property="og:image" content="https://10count.site/ogp.png" />
           <meta property="og:url" content="https://10count.site/" />
           <meta
             property="og:description"
