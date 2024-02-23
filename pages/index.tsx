@@ -3,10 +3,10 @@ import {
   leadStyle,
   layerStyle,
 } from "../styles/pages/index.css.js";
-import Loading from "../components/loading/loading.jsx";
-import Header from "../components/header/header.jsx";
-import Footer from "../components/footer/footer.jsx";
-import Container from "../components/container/container.jsx";
+import Loading from "../components/loading/loading.tsx";
+import Header from "../components/header/header.tsx";
+import Footer from "../components/footer/footer.tsx";
+import Container from "../components/container/container.tsx";
 import { useEffect, useState } from "react";
 import { motion, useAnimationControls } from "framer-motion";
 

@@ -1,4 +1,4 @@
-import { vars } from "../../styles/theme.css.js";
+import { vars } from "../../styles/theme.css.ts";
 import { style } from "@vanilla-extract/css";
 
 const headerStyle = style({

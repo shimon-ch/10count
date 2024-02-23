@@ -3,7 +3,7 @@ import {
   headerStyle,
   headerLogoStyle,
   headerLogoSvg,
-} from "./header.css.js";
+} from "./header.css.ts";
 
 export default function Header() {
   return (

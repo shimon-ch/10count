@@ -12,23 +12,26 @@
   },
   "dependencies": {
     "@vanilla-extract/babel-plugin": "^1.1.7",
-    "@vanilla-extract/next-plugin": "^2.0.2",
-    "framer-motion": "^7.0.0",
-    "next": "12.2.4",
+    "@vanilla-extract/next-plugin": "^2.3.6",
+    "framer-motion": "^11.0.5",
+    "next": "14.1.0",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
   "devDependencies": {
-    "@markuplint/jsx-parser": "^2.4.2",
-    "@next/bundle-analyzer": "^12.2.4",
-    "@vanilla-extract/css": "^1.7.2",
-    "autoprefixer": "^10.4.8",
+    "@biomejs/biome": "1.5.3",
+    "@markuplint/jsx-parser": "^4.1.1",
+    "@next/bundle-analyzer": "^14.1.0",
+    "@types/node": "20.11.20",
+    "@types/react": "18.2.57",
+    "@vanilla-extract/css": "^1.14.1",
+    "autoprefixer": "^10.4.17",
     "cross-env": "^7.0.3",
-    "eslint": "8.21.0",
-    "eslint-config-next": "12.2.4",
-    "markuplint": "^2.10.0",
-    "postcss": "^8.4.16",
-    "prettier": "^2.7.1",
-    "tailwindcss": "^3.1.8"
-  }
+    "markuplint": "^4.1.1",
+    "postcss": "^8.4.35",
+    "prettier": "^3.2.5",
+    "tailwindcss": "^3.4.1",
+    "typescript": "5.3.3"
+  },
+  "packageManager": "yarn@4.1.0"
 }

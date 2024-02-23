@@ -1,4 +1,4 @@
-import { vars } from "../../styles/theme.css.js";
+import { vars } from "../../styles/theme.css.ts";
 import {
   baseStyle,
   layerStyle,
@@ -6,7 +6,7 @@ import {
   counterFrameStyle,
   counterStyle,
   loadingStyle,
-} from "./loading.css.js";
+} from "./loading.css.ts";
 import { motion, useAnimationControls } from "framer-motion";
 import { useEffect } from "react";
 

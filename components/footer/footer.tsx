@@ -1,4 +1,4 @@
-import { themeClass, footerStyle } from "./footer.css.js";
+import { themeClass, footerStyle } from "./footer.css.ts";
 
 export default function Footer() {
   return (

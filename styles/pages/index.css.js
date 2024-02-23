@@ -1,4 +1,4 @@
-import { vars } from "../theme.css.js";
+import { vars } from "../theme.css.ts";
 import { style } from "@vanilla-extract/css";
 
 const sectionTitleStyle = style({
